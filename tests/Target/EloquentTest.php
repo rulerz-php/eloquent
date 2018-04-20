@@ -29,9 +29,7 @@ class EloquentTest extends TestCase
      */
     public function testSupportedTargetsAndModes($target, string $mode): void
     {
-        $builder = $this->createMock(QueryBuilder::class);
-
-        $this->assertTrue($this->target->supports($builder, CompilationTarget::MODE_SATISFIES));
+        $this->assertTrue($this->target->supports($target, $mode));
     }
 
     public function supportedTargetsAndModes(): array
