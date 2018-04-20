@@ -7,5 +7,5 @@ default:
 
     suites:
         pomm:
-            paths: [ "%paths.base%/vendor/kphoen/rulerz/tests/features/common" ]
+            paths: [ "%paths.base%/vendor/kphoen/rulerz/tests/features/common", "%paths.base%/vendor/kphoen/rulerz/tests/features/operators" ]
             contexts: [ Context ]
