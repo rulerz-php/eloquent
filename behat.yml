@@ -1,0 +1,11 @@
+default:
+    formatters:
+        pretty: true
+
+    autoload:
+        "": "%paths.base%/features/bootstrap"
+
+    suites:
+        pomm:
+            paths: [ "%paths.base%/vendor/kphoen/rulerz/tests/features/common" ]
+            contexts: [ Context ]

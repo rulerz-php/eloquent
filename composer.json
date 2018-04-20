@@ -1,0 +1,38 @@
+{
+    "name": "rulerz-php/eloquent",
+    "description": "Eloquent compilation target for RulerZ",
+    "keywords": ["rulerz", "specification", "rule", "engine", "eloquent"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kévin Gomez",
+            "email": "contact@kevingomez.fr",
+            "homepage": "http://www.kevingomez.fr/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+
+        "kphoen/rulerz": "dev-master as 0.30.0",
+
+        "illuminate/database": "~5.0"
+    },
+    "require-dev": {
+        "liip/rmt": "^1.2",
+
+        "behat/behat": "~3.0",
+
+        "phpunit/phpunit": "^7.1",
+        "kphoen/rusty": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "RulerZ\\Eloquent\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Entity\\Eloquent\\": "examples/entities/",
+            "Tests\\RulerZ\\": "tests/"
+        }
+    }
+}

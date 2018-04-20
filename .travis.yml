@@ -1,0 +1,35 @@
+language: php
+
+sudo: false
+
+cache:
+    directories:
+        - $HOME/.composer/cache
+
+addons:
+    postgresql: "9.4"
+
+services:
+    - postgresql
+
+branches:
+    only:
+        - master
+
+php:
+    - 7.1
+    - 7.2
+
+matrix:
+    fast_finish: true
+
+before_install:
+    - phpenv config-rm xdebug.ini || true
+
+install:
+    - composer install --optimize-autoloader --no-interaction
+
+script:
+    - make database
+    - make tests
+    - make rusty
