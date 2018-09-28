@@ -14,7 +14,7 @@
     "require": {
         "php": ">=7.1",
 
-        "kphoen/rulerz": "dev-master as 0.30.0",
+        "kphoen/rulerz": "dev-master as 1.0.0",
 
         "illuminate/database": "~5.0"
     },
