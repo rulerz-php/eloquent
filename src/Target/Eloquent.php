@@ -8,7 +8,7 @@ use RulerZ\Compiler\Context;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 
-use RulerZ\Executor\Eloquent\FilterTrait;
+use RulerZ\Eloquent\Executor\FilterTrait;
 use RulerZ\Executor\Polyfill\FilterBasedSatisfaction;
 use RulerZ\Target\AbstractSqlTarget;
 
