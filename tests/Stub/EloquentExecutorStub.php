@@ -2,7 +2,7 @@
 
 namespace Tests\RulerZ\Stub;
 
-use RulerZ\Executor\Eloquent\FilterTrait;
+use RulerZ\Eloquent\Executor\FilterTrait;
 
 class EloquentExecutorStub
 {
